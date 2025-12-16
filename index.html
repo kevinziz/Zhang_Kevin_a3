@@ -9,12 +9,8 @@
     <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
     <style>
-     /* Colour Pallete:  */  
-      * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
+      
+     /* Colour Pallete: Cream - #FFFCF6, Navy - #043565, Forest Green - #2E5339, Brown - #846C5B; */      
 
       body {
         font-family: 'Manrope', sans-serif;
@@ -51,32 +47,26 @@
 
       .nav-links {
         display: flex;
-        gap: 30px;
+        gap: 50px;
         list-style: none;
       }
 
       .nav-links a {
         text-decoration: none;
-        color: #846C5B;
+        color: #043565;
         font-weight: 500;
-        transition: color 0.3s;
       }
 
       .nav-links a:link {
-        color: #846C5B;
+        color: #043565;
       }
 
-      .nav-links a:visited {
-        color: #846C5B;
-      }
 
       .nav-links a:hover {
         color: #2E5339;
+        font-weight: 800;
       }
 
-      .nav-links a:active {
-        color: #043565;
-      }
 
       .container {
         width: 1200px;
@@ -95,23 +85,19 @@
 
       .hero-content {
         flex: 1;
-        padding-right: 60px;
+        padding-right: 100px;
       }
 
       .hero-content h1 {
         font-family: BBH Bartle, sans-serif;
-        font-size: 45px;
+        font-size: 50px;
         color: #043565;
         margin-bottom: 20px;
         line-height: 1.2;
       }
 
-      .hero-content .highlight {
-        color: #2E5339;
-      }
-
       .hero-content p {
-        font-size: 20px;
+        font-size: 23px;
         color: #846C5B;
         margin-bottom: 30px;
       }
@@ -119,58 +105,55 @@
 
       .hero-image {
         flex: 1;
-        text-align: center;
+        text-align: right;
       }
 
       .hero-image img {
         width: 100%;
-        max-width: 500px;
+        max-width: 300px;
         height: auto;
         border-radius: 20px;
-        box-shadow: 0 20px 60px rgba(46, 83, 57, 0.2);
-        border: 3px solid #846C5B;
+        border: 5px solid #846C5B;
+        
       }
 
       /* Section 2: Design Work */
       #design {
-        padding: 100px 0;
+        padding-top: 100px;
+        padding-bottom: 150px;
         background: #043565;
-        margin: 0 -50vw;
-        padding-left: 50vw;
-        padding-right: 50vw;
+        margin: 0 -50%;
+        padding-left: 50%;
+        padding-right: 50%;
       }
 
       .section-title {
         font-family: BBH Bartle, sans-serif;
-        font-size: 48px;
+        font-size: 45px;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         color: #FFFCF6;
       }
 
       .section-subtitle {
         text-align: center;
-        color: #846C5B;
-        font-size: 18px;
+        color: #FFFCF6;
+        font-size: 25px;
         margin-bottom: 60px;
       }
 
       .design-showcase {
         display: flex;
-        gap: 40px;
+        gap: 0px;
         align-items: center;
       }
 
       .design-image {
-        flex: 1.2;
+        flex: 1;
       }
 
       .design-image img {
-        width: 100%;
-        height: auto;
-        border-radius: 15px;
-        box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
-        border: 3px solid #846C5B;
+        width: 80%;
       }
 
       .design-info {
@@ -182,28 +165,32 @@
       }
 
       .design-info h3 {
-        font-family: Georgia, serif;
-        font-size: 32px;
+        font-family: BBH Bartle, sans-serif;
+        font-size: 30px;
         margin-bottom: 15px;
         color: #043565;
       }
 
       .design-info h4 {
         color: #846C5B;
-        font-size: 16px;
-        margin-bottom: 20px;
+        font-size: 20px;
+        margin-bottom: 10px;
         text-transform: uppercase;
         letter-spacing: 1px;
       }
 
       .design-info p {
-        color: #846C5B;
+        font-weight: 200;
+        font-size: 18px;
+        color: #043565;
         margin-bottom: 15px;
       }
 
       .design-info strong {
         color: #043565;
+        font-size: 20px;
       }
+      
 
       /* Section 3: Video Editing */
       #videos {
@@ -236,6 +223,7 @@
       }
 
       .video-card:hover {
+         /* Used claude.ai to learn about/implement transition to make smooth hover effect */
         transform: translateY(-5px);
         box-shadow: 0 15px 40px rgba(46, 83, 57, 0.35);
       }
@@ -299,7 +287,7 @@
       }
 
       #about .section-subtitle {
-        color: #846C5B;
+        color: #FFFCF6;
       }
 
       .about-content {
@@ -465,7 +453,7 @@
 
         <div class="design-showcase">
           <div class="design-image">
-            <img src="Aira Screen.png" alt="One screen design for a designathon project I worked on" width="700" height="200">
+            <img src="Aira Screen.png" alt="One screen design for a designathon project I worked on">
           </div>
           <div class="design-info">
             <h4>Designathon: Oct 2025</h4>
